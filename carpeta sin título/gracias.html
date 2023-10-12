@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Agrega tu propio archivo CSS personalizado si es necesario -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .card-with-background {
+            background: url(images/gracias.webp) center/cover no-repeat;
+            color: white; /* Ajusta el color del texto según tus necesidades */
+            height: 100vh; /* 100% de la altura de la ventana */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-body {
+            flex: 1; /* Ocupa todo el espacio restante en la altura */
+        }
+
+        @keyframes resizeText {
+            0% {
+                font-size: 24px;
+            }
+
+            50% {
+                font-size: 30px;
+            }
+
+            100% {
+                font-size: 24px;
+            }
+        }
+
+        .enlarge-shrink {
+            animation: resizeText 3s infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card text-center card-with-background">
+
+        <div class="card text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                <h1 class="card-title">¡<span class="enlarge-shrink">MUCHAS GRACIAS POR REGISTRARTE!</span></h1>
+                <p class="card-text">Como agradecimiento, te dejamos un adelanto de nuestro nuevo lanzamiento, ¡que lo disfrutes!</p>
+                <a href="https://youtu.be/PrOET-HCEPY" class="btn btn-light" target="_blank"> Ver Trailer</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3" style="background-color: aliceblue;">
+        <div class="container ">
+            <img src="images/disney-plus-logo.png" alt="Logo" width="15%" height="20%">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
